@@ -646,6 +646,36 @@ section {
     margin: 0;
 }
 
+.whatsapp-button {
+    position: fixed;
+    right: 30px;
+    bottom: 90px;
+    z-index: 998;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: #25d366;
+    color: var(--white);
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+
+.whatsapp-button:hover {
+    background: #1da851;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .whatsapp-button {
+        right: 20px;
+        bottom: 90px;
+    }
+}
+
 .contact-form-wrapper {
     background: var(--light-bg);
     padding: 40px;
